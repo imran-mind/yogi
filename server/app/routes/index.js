@@ -22,8 +22,8 @@ router.get('/test',function(req,res){
     res.status(200).json({message:"server is up :)"});
 });
 
-router.post('/register',validate(userValidation.login),userRoute.register);
-router.post('/login', validate(userValidation.login),userRoute.login);
+router.post('/yogi/register',validate(userValidation.login),userRoute.register);
+router.post('/yogi/login', validate(userValidation.login),userRoute.login);
 // router.get('/',userRoute.fetchUsers);
 
 module.exports = function (app) {
